@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('secret-base.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Verdana', sans-serif;
+    color: #e0e0e0; /* Светъл цвят за четливост върху тъмен фон */
+}
+
+.scene {
+    background-color: rgba(25, 25, 25, 0.85); /* Заден фон с прозрачност за текстовото съдържание */
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    max-width: 800px;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    color: #ffb700; /* Жълто-оранжев цвят за заглавието */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 1.8rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.dialogue {
+    font-style: italic;
+    color: #a0f0ff; /* Пастелно синьо за диалозите */
+    padding-left: 15px;
+    border-left: 3px solid #a0f0ff; /* Акцент върху диалозите */
+    margin: 10px 0;
+}
+
+.scene-link,
+.next-scene-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #1e90ff, #ff1493);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+}
+
+.scene-link:hover {
+    background: linear-gradient(45deg, #ff1493, #1e90ff);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+.next-scene-link {
+    float: right; /* Бутонът за следваща сцена се позиционира вдясно */
+    background: linear-gradient(45deg, #ff1493, #1e90ff);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+.styled-image {
+    display: none; /* Скрита снимка, защото вече е фон на страницата */
+}
+.scene-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+.scene-images img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
